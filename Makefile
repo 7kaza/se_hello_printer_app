@@ -44,6 +44,3 @@ docker_push: docker_build
 	docker tag $(DOCKER_IMG_NAME) $(TAG); \
 	docker push $(TAG); \
 	docker logout;
-
-docker_stop:
-	docker stop $(SERVICE_NAME)-dev
