@@ -2,6 +2,8 @@ import unittest
 from hello_world import app
 from hello_world.formater import SUPPORTED
 
+exp = b"<greetings><name>Karolina</name><msg>Hello World!</msg></greetings>"
+
 
 class FlaskrTestCase(unittest.TestCase):
     def setUp(self):
@@ -20,6 +22,5 @@ class FlaskrTestCase(unittest.TestCase):
     def test_msg_with_output_xml(self):
         rv = self.app.get("/?output=xml")
         self.assertEqual(
-            b"<greetings><name>Karolina</name><msg>Hello World!</msg></greetings>",
-            rv.data,
+            exp, rv.data,
         )  # noqa
