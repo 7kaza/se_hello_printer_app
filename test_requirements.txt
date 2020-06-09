@@ -1,0 +1,6 @@
+mock
+pytest
+flake8
+requests
+jmespath
+selenium
