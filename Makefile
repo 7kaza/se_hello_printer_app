@@ -25,9 +25,6 @@ test_cov:
 	PYTHONPATH=. py.test --verbose -s --cov=.
 	PYTHONPATH=. py.test --verbose -s --cov=. --cov-report xml
 
-test_xunit:
-	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml  -v -m "not uitest"
-
 test_smoke:
 	curl --fail 127.0.0.1:5000
 
