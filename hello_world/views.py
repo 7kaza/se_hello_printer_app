@@ -20,6 +20,7 @@ def index():
 def supported_output():
     return ", ".join(SUPPORTED)
 
-@app.route('/ui')
+
+@app.route("/ui")
 def home():
-    return redirect(url_for('firstpage', filename='index2.html'))
+    return redirect(url_for("firstpage", filename="index2.html"))
