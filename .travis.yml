@@ -8,11 +8,10 @@ install:
   - make deps
 script:
   - make lint
-  - make test_xunit
   - make docker_build
   - make docker_push
-  
+
 deploy:
   provider: heroku
-  app: shielded-falls-22933
-  api_key: ${HEROKU_API_KEY}
+  app: arcane-hamlet-10587
+  api_key: ${HEROKU_API_KEY1}
