@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="description" content="Strona testowa nieistniejącej firmy." />
+   <meta name="keywords" content="Continous Delivery, tester" />
+   <title>Hello printer - 2.0 version</title>
+   <link rel="stylesheet" href="{{ url_for('static',     filename='css/styl.css') }}">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+
+<header>
+<div class="content">
+<h1><a href="index2.html">FICTION COMPANY :) </a></h1>
+<span style="font-size: large"><h1 id="napis"><strong>print("Hello World!") cdn.</strong></h1></span>
+<p><strong>Strona testowa w budowie</strong></p>
+<nav>
+<ul>
+</ul>
+</nav>
+</div>
+</header>
+
+<header><p>Strona testowa do nauki Continuous Delivery.</p></header>
+
+<section><article><p>Strona testowa w budowie. Przepraszamy...</p></article></section>
+
+
+<div id="main">
+
+<div class="content">
+
+<div style="text-align: center"><img src="static/image/logo.png" alt="test logo" title="fiction company" />
+<div class="text"><h3>FICTION COMPANY since 2020.</h3>
+<p>Tu powinien znaleźć się szczegółowy opis firmy, niestety firma Fiction Company zajmuje się niczym dla nikogo. Oferując nic za nic. </p>
+<p>Strona www ma na celu naukę automatyzacji testów. Projekt w ramach studiów podyplomowych na kierunku: „Tester oprogramowania dla aplikacji mobilnych i serwerowych”  WSB Wrocław 2019/2020. </p></div>
+
+<section class="left">
+
+<article>
+<h2>O firmie</h2>
+<p>Firma powstała 9 czerwca 2020 roku o godzinie 14:45. Jej głównym założeniem było rozwinięcie projektu hello_printer app. Przetestowanie dodatkowych frameworków oraz narzędzi .</p>
+<p>Twórcą projektu jest Maria Antonina Kubraczek (vel K.A. Meier).
+Fiction Company nie oferuję żadnych produktów ani usług, a celem jej działania jest rozwój własny autorki. </p>
+</article>
+</section>
+
+<section class="right">
+
+<article>
+<h2>Oferta</h2>
+<p>Oferujemy możliwość przetestowania prostej strony www nieistniejącej firmy z ambicjami. </p>
+</article>
+</section>
+</div>
+
+<div class="content">
+
+<section class="center">
+<article>
+<div style="text-align: center">
+<header><h1><span style="font-size: x-large rozmiar" > Wiecej o projekcie:</h1></span></header>
+<ul>
+<li><strong><a href="https://github.com/7kaza/se_hello_printer_app">GitHub</a></strong></li>
+<li><strong><a href="https://travis-ci.org/github/7kaza/se_hello_printer_app">TravisCl</a></strong></li>
+<li><strong><a href="https://shielded-falls-22933.herokuapp.com/">Heroku</a></strong></li>
+</ul>
+
+</div>
+</div>
+
+<section>
+<article>
+
+<div class="content">
+<div style="text-align: center">
+<header><h2><span style="font-size: x-large rozmiar" > Jak masz na imie ? </h2></span></header>
+<p>Wpisz imie w adresie strony po /. Tylko nie Karolina... </p>
+<ul>
+  {% if name %}
+  <p><strong><h1><span style="font-size: x-large rozmiar" >Hello {{ name }}!</h1></span></strong></p>
+  {% else %}
+  <p><strong><h1><span style="font-size: x-large rozmiar" >Hello, World!</h1></span></strong></p>
+  {% endif %}
+</ul>
+</header>
+</article>
+</section>
+
+</div>
+</div>
+
+<footer>
+
+<div class="content">
+
+<ul>
+<li><strong>Kontakt:</strong> ul. Ulica 2a, 12-345 Miasto</li>
+<li class="center"><strong>Telefon:</strong> 12 345-67-89</li>
+<li><strong>Mail:</strong><a href="mailto:mail@mail.pl">mail@mail.pl</a>
+</li>
+</ul>
+
+<div class="copyright">
+<p>copyright © 2020 <a href="index2.html">Fiction Company</a></p>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
