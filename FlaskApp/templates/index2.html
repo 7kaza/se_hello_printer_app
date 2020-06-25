@@ -18,10 +18,8 @@
 <h1><a href="index2.html">FICTION COMPANY :) </a></h1>
 <span style="font-size: large"><h1 id="napis"><strong>print("Hello World!") cdn.</strong></h1></span>
 <p><strong>Strona testowa w budowie</strong></p>
-<nav>
-<ul>
-</ul>
-</nav>
+
+
 </div>
 </header>
 
@@ -79,18 +77,24 @@ Fiction Company nie oferuję żadnych produktów ani usług, a celem jej działa
 <div class="content">
 <div style="text-align: center">
 <header><h2><span style="font-size: x-large rozmiar" > Jak masz na imie ? </h2></span></header>
-<p>Wpisz imie w adresie strony po /. Tylko nie Karolina... </p>
-<ul>
-  {% if name %}
-  <p><strong><h1><span style="font-size: x-large rozmiar" >Hello {{ name }}!</h1></span></strong></p>
-  {% else %}
-  <p><strong><h1><span style="font-size: x-large rozmiar" >Hello, World!</h1></span></strong></p>
-  {% endif %}
-</ul>
-</header>
+<p>Wpisz swoje imie w adresie strony    http://127.0.0.1:5000/    po / </p>
+<p> (tylko nie Karolina...) </p>
 </article>
 </section>
 
+<section>
+<article>
+
+<div class="content">
+<div style="text-align: center">
+  {% if name %}
+  <header><strong><h2><span style="font-size: x-large rozmiar" >Hello {{ name }}!</h2></span></strong></header>
+  {% else %}
+  <header><strong><h2><span style="font-size: x-large rozmiar" >Hello, World!</h2></span></strong></header>
+  {% endif %}
+
+</article>
+</section>
 </div>
 </div>
 

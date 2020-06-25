@@ -1,8 +1,12 @@
 from flask import Flask
 from flask import request
 from flask import render_template
-from flask import abort, redirect, url_for, make_response
+from flask import abort, redirect, url_for
+from datetime import timedelta
 app = Flask(__name__)
+
+app.secret_key = "hello"
+app.permanent_session_lifetime = timedelta(minutes=5)
 
 @app.route('/')
 def home():
@@ -21,4 +25,4 @@ def error():
    return "Witaj, mamy to samo imie :) "
 
 if __name__ == "__main__":
-    app.run(debug=True)
+	app.run(debug=True)
